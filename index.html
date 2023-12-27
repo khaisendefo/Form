@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>KHASIENDEFO - Fedback Form</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="fullpage">
+      <div class="container">
+        <div class="box">
+          <h1 class="title">Заполните форму</h1>
+          <div class="contact">
+            <div class="contact__left">
+              <form class="contact__form" action="">
+                <label class="contact__form-label one---label" for="Name">
+                  <input class="contact__form-input input---name" type="text" placeholder="Имя" required>
+                  <input class="contact__form-input" type="text" placeholder="Фамилия" required>
+                </label>
+                <label class="contact__form-label two---label" for="Contact">
+                  <input class="contact__form-input" type="tel" placeholder="Телефон" required>
+                  <input class="contact__form-input" type="email" placeholder="Почта" required>
+                </label>
+                <textarea class="contact__form-textarea" placeholder="Ваше сообщение" name="Сообщение"></textarea>
+                <select  class="contact__form-select" name="contact">
+                  <option value="How to contact you?" disabled selected>Как с вами связаться?</option>
+                  <option value="Telegram">Telegram</option>
+                  <option value="WhatsApp">WhatsApp</option>
+                  <option value="Vider">Vider</option>
+                </select>
+                <div class="contact__form-send">
+                  <div class="contact__form-bottom">
+                    <input class="contact__form-checkbox" type="checkbox" required>
+                    <p class="contact__form-policy">
+                      Нажимая на кнопку, вы соглашаетесь с <a target="_blank" href="#">политикой конфиденциальности</a>
+                    </p>
+                  </div>
+                </div>
+                <button class="contact__form-button" type="submit">Отправить</button>
+              </form>
+            </div>
+            <div class="images">
+              <img src="images/1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/choices.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
